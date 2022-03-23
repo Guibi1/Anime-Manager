@@ -1,0 +1,35 @@
+@use "variables"
+
+  
+.card
+  display: grid
+  grid-template-columns: 1fr 2fr
+  justify-content: center
+  align-items: stretch
+  padding: calc(variables.$spacing / 2)
+  gap: calc(variables.$spacing / 2)
+  border-radius: variables.$radius
+  color: variables.$white
+  background-color: variables.$accent
+
+  .cover
+    position: relative
+
+    img
+      border-radius: variables.$radius
+      object-fit: contain
+
+  .title
+    margin: 0
+
+  .japaneseTitle
+    margin: 0
+    margin-bottom: 1rem
+    color: variables.$light
+    font-style: italic
+    font-weight: 100
+
+  .description
+    margin: 0
+    height: 6rem
+    overflow: auto

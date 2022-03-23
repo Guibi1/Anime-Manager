@@ -1,0 +1,45 @@
+@use "variables"
+
+
+html,
+body
+  padding: 0
+  margin: 0
+  font-family: 'Cantarell', sans-serif
+  color: variables.$white
+  background-color: variables.$darker
+
+
+main
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  min-height: 100vh
+  padding-top: variables.$nav-height
+  margin: variables.$spacing 6rem
+
+
+a
+  color: inherit
+  text-decoration: none
+
+
+button
+  padding: .4rem 1.6rem
+  background-color: variables.$light
+  border: .1rem variables.$light solid
+  border-radius: variables.$radius
+  font-family: inherit
+  font-size: inherit
+  transition: color variables.$transition-time, background-color variables.$transition-time
+
+  &:hover
+    color: variables.$white
+    background-color: variables.$dark
+
+
+.grid
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  gap: variables.$spacing
