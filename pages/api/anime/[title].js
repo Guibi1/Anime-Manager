@@ -7,6 +7,6 @@ export default async function handler(req, res)
         for (let episode of json[element].downloads)
             if (episode.res == "1080")
                 res.status(200).end(episode.magnet)
-npm
+
     res.status(400)
 }
